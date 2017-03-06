@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class JRBaseServer;
+@protocol JRServerProtocol;
 @interface JRServerFactory : NSObject
 + (instancetype)shareInstance;
 

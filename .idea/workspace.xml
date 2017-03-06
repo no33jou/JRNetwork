@@ -18,8 +18,8 @@
       <file leaf-file-name="JRNetwork.podspec" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JRNetwork.podspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.m" />
-        <option value="$PROJECT_DIR$/JRNetwork.podspec" />
         <option value="$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.h" />
+        <option value="$PROJECT_DIR$/JRNetwork.podspec" />
       </list>
     </option>
   </component>
@@ -198,12 +198,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488788193878</updated>
-      <workItem from="1488788196388" duration="2204000" />
+      <workItem from="1488788196388" duration="2420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2204000" />
+    <option name="totallyTimeSpent" value="2420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="800" extended-state="6" />
@@ -285,8 +285,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JRNetwork.podspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>

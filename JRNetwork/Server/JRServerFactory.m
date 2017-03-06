@@ -7,9 +7,8 @@
 //
 
 #import "JRServerFactory.h"
-//#import "RWAYuncunServer.h"
 
-NSString * const kYuncunServerIdtifier = @"kRWAYuncunServerIdtifier";
+NSString * const kYuncunServerIdtifier = @"RWAYuncunServer";
 @interface JRServerFactory()
 @property(nonatomic,strong)NSCache *serviceStorage;
 @end
@@ -35,13 +34,13 @@ NSString * const kYuncunServerIdtifier = @"kRWAYuncunServerIdtifier";
     return server;
 }
 #pragma mark - private method
-//- (JRBaseServer<JRServerProtocol> *)newServer:(NSString *)identifier{
-//    if([kYuncunServerIdtifier isEqualToString:identifier]){
-//        RWAYuncunServer *server = [[RWAYuncunServer alloc] init];
-//        return server;
-//    }
-//    return nil;
-//}
+- (JRBaseServer<JRServerProtocol> *)newServer:(NSString *)identifier{
+    if([kYuncunServerIdtifier isEqualToString:identifier]){
+        JRBaseServer *server = [NSClassFromString(identifier) new];
+        return server;
+    }
+    return nil;
+}
 #pragma mark - getters and setters
 - (NSCache *)serviceStorage
 {

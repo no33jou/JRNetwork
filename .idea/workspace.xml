@@ -15,7 +15,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulatoriPhone_5s_10.2_x86_64_1" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JRNetwork.podspec" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JRNetwork.podspec" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JRNetwork.podspec">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JRServerFactory.m" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JRServerFactory.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="154">
+              <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
               <folding>
                 <element signature="e#135#162#0" expanded="true" />
               </folding>
@@ -82,9 +82,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.m" />
         <option value="$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.h" />
         <option value="$PROJECT_DIR$/JRNetwork.podspec" />
+        <option value="$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.m" />
       </list>
     </option>
   </component>
@@ -198,12 +198,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488788193878</updated>
-      <workItem from="1488788196388" duration="2420000" />
+      <workItem from="1488788196388" duration="2942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2420000" />
+    <option name="totallyTimeSpent" value="2942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="800" extended-state="6" />
@@ -265,16 +265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#135#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -288,6 +278,16 @@
         <state relative-caret-position="30">
           <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JRNetwork/Server/JRServerFactory.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="e#135#162#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

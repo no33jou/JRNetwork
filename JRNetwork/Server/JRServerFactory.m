@@ -29,7 +29,7 @@ NSString * const kYuncunServerIdtifier = @"RWAYuncunServer";
     if ([self.serviceStorage objectForKey:serverIdentifier] != nil) {
         return [self.serviceStorage objectForKey:serverIdentifier];
     }
-    JRBaseServer *server = [self newServer:serverIdentifier];
+    JRBaseServer<JRServerProtocol> *server = [self newServer:serverIdentifier];
     [self.serviceStorage setObject:server forKey:serverIdentifier];
     return server;
 }

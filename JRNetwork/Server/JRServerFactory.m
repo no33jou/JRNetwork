@@ -7,7 +7,7 @@
 //
 
 #import "JRServerFactory.h"
-
+#import "JRBaseServer.h"
 NSString * const kYuncunServerIdtifier = @"RWAYuncunServer";
 @interface JRServerFactory()
 @property(nonatomic,strong)NSCache *serviceStorage;

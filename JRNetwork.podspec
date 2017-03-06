@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'JRNetWork'
-  s.version          = '0.1.1'
+  s.version          = '0.1.10'
   s.summary          = 'JRNetWork'
   s.homepage         = 'https://gitsuk.com/no33jou/JRNetWork'
   s.platform         = :ios, '7.0'
@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
         server.source_files = 'JRNetwork/Server/*'
         server.public_header_files = 'JRNetwork/Server/JRServerFactory.h'
   end
+
 end

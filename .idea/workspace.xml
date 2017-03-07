@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6397f83f-1f72-4905-9444-60334f405112" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JRNetwork.podspec" afterPath="$PROJECT_DIR$/JRNetwork.podspec" />
-    </list>
+    <list default="true" id="6397f83f-1f72-4905-9444-60334f405112" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -206,12 +202,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488788193878</updated>
       <workItem from="1488788196388" duration="3021000" />
-      <workItem from="1488852250165" duration="33000" />
+      <workItem from="1488852250165" duration="147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3054000" />
+    <option name="totallyTimeSpent" value="3168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1280" height="777" extended-state="6" />

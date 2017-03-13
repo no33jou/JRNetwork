@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C04545B499BD76A6571BEC8 /* JRServerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C045A4C8C1DC4553DF0B2C3 /* JRServerFactory.m */; };
+		1C045598B62DB808C8BE6F50 /* JRPlistManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0456E41A07A9BA91BE4931 /* JRPlistManage.m */; };
 		1C0458EF9D74CFA08F2D847B /* JRBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C045B1E11CD0812B9EB3817 /* JRBaseServer.m */; };
 		96488BB51E6D4FE800F0691F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96488BB41E6D4FE800F0691F /* main.m */; };
 		96488BB81E6D4FE800F0691F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96488BB71E6D4FE800F0691F /* AppDelegate.m */; };
@@ -38,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		1C04547839FA642219DEE452 /* JRBaseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBaseServer.h; sourceTree = "<group>"; };
+		1C0456E41A07A9BA91BE4931 /* JRPlistManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPlistManage.m; sourceTree = "<group>"; };
 		1C045A4C8C1DC4553DF0B2C3 /* JRServerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRServerFactory.m; sourceTree = "<group>"; };
 		1C045B1E11CD0812B9EB3817 /* JRBaseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBaseServer.m; sourceTree = "<group>"; };
+		1C045B94245008ABD3070885 /* JRPlistManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPlistManage.h; sourceTree = "<group>"; };
 		1C045E0AB251DC41C5DE587D /* JRServerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRServerFactory.h; sourceTree = "<group>"; };
 		96488BB01E6D4FE800F0691F /* JRNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96488BB41E6D4FE800F0691F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C04593EE89BCF3D3BBDAA8B /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				1C0456E41A07A9BA91BE4931 /* JRPlistManage.m */,
+				1C045B94245008ABD3070885 /* JRPlistManage.h */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		96488BA71E6D4FE800F0691F = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +129,7 @@
 				96488BC11E6D4FE800F0691F /* LaunchScreen.storyboard */,
 				96488BC41E6D4FE800F0691F /* Info.plist */,
 				96488BB31E6D4FE800F0691F /* Supporting Files */,
+				1C04593EE89BCF3D3BBDAA8B /* Plist */,
 			);
 			path = JRNetwork;
 			sourceTree = "<group>";
@@ -299,6 +312,7 @@
 				96488BB51E6D4FE800F0691F /* main.m in Sources */,
 				1C04545B499BD76A6571BEC8 /* JRServerFactory.m in Sources */,
 				1C0458EF9D74CFA08F2D847B /* JRBaseServer.m in Sources */,
+				1C045598B62DB808C8BE6F50 /* JRPlistManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

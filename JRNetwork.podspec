@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'JRNetwork'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'JRNetwork'
   s.homepage         = 'https://gitsuk.com/no33jou/JRNetwork'
   s.platform         = :ios, '7.0'
@@ -13,5 +13,8 @@ Pod::Spec.new do |s|
         server.source_files = 'JRNetwork/Server/**/*'
         server.public_header_files = 'JRNetwork/Server/**/*.h'
   end
-
+  s.subspec 'Plist' do |plist|
+         plist.source_files = 'JRNetwork/Plist/**/*'
+         plist.public_header_files = 'JRNetwork/Plist/**/*.h'
+  end
 end

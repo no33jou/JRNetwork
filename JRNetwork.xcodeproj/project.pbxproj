@@ -461,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H9X2RYSPF2;
 				INFOPLIST_FILE = JRNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiqiao.iOS.JRNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H9X2RYSPF2;
 				INFOPLIST_FILE = JRNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiqiao.iOS.JRNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,6 +550,7 @@
 				96488BDF1E6D4FE900F0691F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96488BE01E6D4FE900F0691F /* Build configuration list for PBXNativeTarget "JRNetworkTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +559,7 @@
 				96488BE21E6D4FE900F0691F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96488BE31E6D4FE900F0691F /* Build configuration list for PBXNativeTarget "JRNetworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +568,7 @@
 				96488BE51E6D4FE900F0691F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

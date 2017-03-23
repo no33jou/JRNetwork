@@ -36,7 +36,7 @@ NSString * const kYuncunServerIdtifier = @"RWAYuncunServer";
 #pragma mark - private method
 - (JRBaseServer<JRServerProtocol> *)newServer:(NSString *)identifier{
     if([kYuncunServerIdtifier isEqualToString:identifier]){
-        JRBaseServer *server = [NSClassFromString(identifier) new];
+        JRBaseServer<JRServerProtocol> *server = [NSClassFromString(identifier) new];
         return server;
     }
     return nil;

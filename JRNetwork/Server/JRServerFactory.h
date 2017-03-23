@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class JRBaseServer;
+OBJC_EXTERN NSString * const kYuncunServerIdtifier;
 @protocol JRServerProtocol;
 @interface JRServerFactory : NSObject
 + (instancetype)shareInstance;

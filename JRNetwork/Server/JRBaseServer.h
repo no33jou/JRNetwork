@@ -20,7 +20,8 @@
 @end
 
 @interface JRBaseServer : NSObject
-//
+
+@property(nonatomic,assign)BOOL Online;
 @property(nonatomic,copy,readonly)NSString *baseUrl;
 @property(nonatomic,copy,readonly)NSString *version;
 

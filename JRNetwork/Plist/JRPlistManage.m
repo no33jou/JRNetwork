@@ -23,8 +23,8 @@
         self.fileName = fileName;
         self.isBundle = isBundle;
 
-        NSString *errorDesc = nil;
         NSString *plistPath = nil;
+        NSError *error = nil;
 
         if (isBundle) {
             plistPath = [[NSBundle mainBundle] pathForResource:self.fileName ofType:@"plist"];
@@ -32,13 +32,9 @@
             plistPath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist", self.fileName]];
         }
 
-        NSPropertyListFormat format;
+
         NSData *plistData = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-        self.listData = [NSPropertyListSerialization
-                         propertyListFromData:plistData
-                         mutabilityOption:NSPropertyListMutableContainersAndLeaves
-                         format:&format 
-                         errorDescription:&errorDesc];
+        self.listData = [NSJSONSerialization JSONObjectWithData:plistData options:NSJSONReadingAllowFragments error:&error];
     }
     return self;
 }
@@ -57,26 +53,19 @@
             [[NSFileManager defaultManager] createFileAtPath:plistPath contents:nil attributes:nil];
         }
 
-        NSString *errorDesc = nil;
-        NSPropertyListFormat format;
+        NSError *error;
         NSData *plistData = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-        self.listData = [NSPropertyListSerialization
-                         propertyListFromData:plistData
-                         mutabilityOption:NSPropertyListMutableContainersAndLeaves
-                         format:&format
-                         errorDescription:&errorDesc];
+        self.listData = [NSJSONSerialization JSONObjectWithData:plistData options:NSJSONReadingAllowFragments error:&error];
     }
     return self;
 }
 
 - (BOOL)save
 {
-    NSString *error = nil;
+    NSError *error = nil;
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
     NSString *plistPath = [rootPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist", self.fileName]];
-    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:self.listData
-                                                                   format:NSPropertyListXMLFormat_v1_0
-                                                         errorDescription:&error];
+    NSData *plistData = [NSJSONSerialization dataWithJSONObject:self.listData options:NSJSONWritingPrettyPrinted error:&error];
     if(plistData) {
         [plistData writeToFile:plistPath atomically:YES];
         return YES;
@@ -110,10 +99,11 @@
         [self deletePlistFile:fileName];
     }
 
-    NSString *error = nil;
+    NSError *error = nil;
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
     NSString *plistPath = [rootPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist", fileName]];
-    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:data format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
+    //    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:data format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
+    NSData *plistData = [NSJSONSerialization dataWithJSONObject:data options:NSJSONWritingPrettyPrinted error:&error];
     if (plistData) {
         [[NSFileManager defaultManager] createFileAtPath:plistPath contents:nil attributes:nil];
         [plistData writeToFile:plistPath atomically:YES];
@@ -174,13 +164,13 @@
     }
 
     if (fileFounded) {
-        NSString *errorDesc = nil;
-        NSPropertyListFormat format;
+        NSError *error ;
         NSData *plistData = [[NSFileManager defaultManager] contentsAtPath:filePath];
-        id result = [NSPropertyListSerialization propertyListFromData:plistData
-                                                     mutabilityOption:NSPropertyListMutableContainersAndLeaves
-                                                               format:&format
-                                                     errorDescription:&errorDesc];
+        //        id result = [NSPropertyListSerialization propertyListFromData:plistData
+        //                                                     mutabilityOption:NSPropertyListMutableContainersAndLeaves
+        //                                                               format:&format
+        //                                                     errorDescription:&errorDesc];
+        id result = [NSJSONSerialization JSONObjectWithData:plistData options:NSJSONReadingAllowFragments error:&error];
         return result;
     }
 

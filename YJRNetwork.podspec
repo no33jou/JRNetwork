@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'JRNetwork'
+  s.name             = 'YJRNetwork'
   s.version          = '0.1.3'
-  s.summary          = 'JRNetwork'
+  s.summary          = 'YJRNetwork'
   s.homepage         = 'https://github.com/no33jou/JRNetwork'
   s.platform         = :ios, '7.0'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
